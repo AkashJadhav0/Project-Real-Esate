@@ -2,7 +2,7 @@ const app = require('./src/app');
 const config = require('./src/config/environment');
 const mongoose = require('mongoose');
 
-const PORT = config.port;
+const PORT = process.env.PORT || '4000';
 const HOST = process.env.HOST || '0.0.0.0';
 
 // MongoDB connection events
